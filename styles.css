@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 900px;
+    padding: 60px 10px;
+    margin: 0 10px;
+}
+
+.container__names {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    border-bottom: 1.5px solid rgb(145, 145, 145);
+    padding: 10px;
+}
+
+th {
+    width: 400px;
+}
+
+td {
+    border-bottom: 1.5px solid rgb(145, 145, 145);
+    padding: 12px;
+}
+
+
+form div {
+    margin-top: 15px;
+}
+
+input[type="text"] {
+    width: calc(100% - 15px);
+    padding: 7px;
+    outline: none;
+    border-radius:3px;
+    border: 2px solid rgb(145, 145, 145);
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    padding: 8px 18px;
+    outline: none;
+    border: 2px solid rgba(145, 145, 145, 0.9);
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bolder;
+    color: rgb(48, 48, 48);
+}
+
+#book-list {
+    width: 100%;
+    padding: 8px 18px;
+}
+
+/* ERROR */
+
+.error { 
+    background-color: red;
+}
+
+/* SUCCESS */
+
+.success {
+    background-color: green;
+}
+
+.success,
+.error {
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+
+
+@media (max-width: 600px) {
+    input[type="submit"] {
+        width: 100%;
+        padding: 8px 18px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 60px 1px;
+        margin: 0 5px;
+    }
+
+    td {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 300px) {
+    td {
+        font-size: 11px;
+    }
+}
+
+
+
+

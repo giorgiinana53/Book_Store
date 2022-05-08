@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./book.png">
+    <title>Book | Store</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Book</h1>
+        <form id="book-form">
+            <div>
+                <label id="label" for="title"><b>Title</b></label><br>
+                <input type="text" id="title" class="container__title--book">
+            </div>
+            <div>
+                <label id="label" for="title"><b>Author</b></label><br>
+                <input type="text" id="author" class="container__author--book">
+            </div>
+            <div>
+                <label id="label" for="title"><b>ISBN#</b></label><br>
+                <input type="text" id="isbn" class="container__isbn--book">
+            </div>
+            <div>
+                <input type="submit" value="SUBMIT" class="container__btn--book">
+            </div>
+        </form>
+        <br>
+        <hr>
+        <table class="container__names">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>    
+            <br>
+            <tbody id="book-list"></tbody>
+        </table>
+        <div id="line"></div>
+    </div>
+<script src="./scriptes6.js"></script>
+</body>
+</html>
